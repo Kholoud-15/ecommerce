@@ -1,0 +1,128 @@
+*
+{
+  box-sizing: border-box;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+/* signup form styles */
+h1
+{
+  text-align: center;
+}
+/* login form styles  */
+#signin
+{
+  text-align: center;
+}
+.login-container
+{
+  width: 50%;
+  border-radius: 20px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  box-shadow: 0px 20px 20px #000000;
+  background-color: #ffffff;
+}
+.login-container .login-form
+{
+  grid-column:  1/ span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.login-container .login-form .form-group
+{
+  grid-column: 1 / span 12;
+  padding: 10px;
+  display: grid;
+  grid-auto-columns:  repeat(12, 1fr);
+}
+.login-container .login-form .form-group input, label, span
+{
+  display: block;
+  width: 100%;
+}
+
+.login-container .login-form .form-group input
+{
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #888;
+}
+.login-container .login-form .form-group label
+{
+  font-size: 20px;
+}
+.login-container .login-form .form-group span
+{
+  color: crimson;
+  padding: 10px;
+}
+.login-container .login-form .form-group input[type=submit]
+{
+  cursor: pointer;
+  outline: none;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  outline: none;
+}
+.login-container .login-form .form-group input[type=checkbox]
+{
+  display: inline-block;
+  grid-column: 1/ span 1;
+}
+.login-container .login-form .form-group #remember
+{
+
+  display: inline-block;
+  grid-column: 2/ span 10;
+  padding: 0;
+  color: black;
+}
+.login-container .login-form .form-group #signup,
+{
+  grid-column: 1/ span 5;
+}
+.login-container .login-form .form-group #forgot-password
+{
+  grid-column: 6/ span 5;
+}
+a
+{
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .login-container
+  {
+    width: 80%;
+    height: 100%;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  .login-container .login-form .form-group
+  {
+    grid-column: 2/ span 10;
+  }
+  .login-container .login-form .form-group input, label, span
+  {
+    display: block;
+    width: 100%;
+  }
+  .login-container .login-form .form-group #signup,
+  {
+    grid-column: 1/ span 12;
+  }
+  .login-container .login-form .form-group #forgot-password
+  {
+    grid-column: span 12;
+  }
+
+}

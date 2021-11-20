@@ -1,0 +1,103 @@
+*
+{
+  box-sizing: border-box;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+/* signup form styles */
+h1
+{
+  text-align: center;
+}
+.container
+{
+  margin: 20px auto;
+  width: 70%;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px #000000;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.container .form-row
+{
+  grid-column: 3/ span 8;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.container .form-row .row
+{
+  grid-column: 1/ span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.container .form-row .row input
+{
+  grid-column: 1 /span 12;
+  padding: 10px;
+  margin-bottom: 5px;
+  outline: none;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+}
+.container .form-row .row label
+{
+  grid-column: 4 /span 6;
+  display: block;
+  padding: 10px;
+  margin-bottom: 3px;
+  font-size: 1rem;
+}
+
+.container .form-row .row select
+{
+  grid-column: 1 /span 12;
+  padding: 10px;
+  margin-bottom: 5px;
+  outline: none;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+}
+
+.container .form-row .row span a
+{
+  font-size: 20px;
+}
+#signup
+{
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: dodgerblue;
+  outline:none;
+  border: none;
+  color:white;
+  cursor: pointer;
+}
+.container span
+{
+  color: red;
+  grid-column: 1 /span 12;
+  font-size: 20px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .container .form-row
+  {
+    grid-column: 1/ span 12;
+  }
+  .container
+  {
+    width: 90%;
+  }
+}

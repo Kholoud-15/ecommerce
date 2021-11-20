@@ -1,0 +1,4 @@
+# prevent Files listing
+Options -Indexes
+#prevent server signature
+SERVERSIGNATURE OFF
